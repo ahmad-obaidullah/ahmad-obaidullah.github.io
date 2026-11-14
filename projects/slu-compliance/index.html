@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLU Compliance Intelligence — Ahmad Obaidullah, Data Analyst</title>
+  <meta name="description" content="Data Visualization Associate internship (Excelerate × Saint Louis University): PostgreSQL pipeline deduplicating 34,341 → 6,875 records and a 5-page Looker Studio dashboard for international student compliance. Star Performer badge." />
+  <meta property="og:title" content="Audit-Ready Compliance Intelligence for Saint Louis University's International Students" />
+  <meta property="og:image" content="../../assets/img/badge-slu-star-performer.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="../../index.html"><span class="logo-mark">AO</span> Ahmad Obaidullah</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links" data-nav-links aria-label="Main">
+        <a href="../../index.html#about">About</a>
+        <a href="../../index.html#projects">Projects</a>
+        <a href="../../certifications/index.html">Certifications</a>
+        <a href="../../index.html#contact">Contact</a>
+        <a href="#" class="nav-cta" title="Résumé PDF — link coming soon">Résumé ↓</a>
+        <button class="theme-btn" data-theme-toggle aria-label="Toggle light mode">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="crumbs"><a href="../../index.html">Home</a> / <a href="../../index.html#projects">Projects</a> / Case study 02</p>
+        <span class="kicker">Case study 02 · Internship · ★ Star Performer</span>
+        <h1>Audit-Ready Compliance Intelligence for Saint Louis University's International Students</h1>
+        <p class="hero-sub">Data Visualization Associate early remote internship (<strong>Excelerate × Saint Louis University</strong>). I built the PostgreSQL pipeline and the 5-page Looker Studio dashboard behind SLU's international-student compliance reporting — and earned the <strong>Star Performer</strong> badge.</p>
+        <div class="stat-strip">
+          <div class="stat reveal"><div class="num">34,341 → 6,875</div><div class="lbl">records deduplicated into the master database</div></div>
+          <div class="stat reveal reveal-d1"><div class="num" data-count="3523">0</div><div class="lbl">SEVIS records turned into intelligence</div></div>
+          <div class="stat reveal reveal-d2"><div class="num" data-count="100" data-suffix="%">0</div><div class="lbl">count-level reconciliation between systems</div></div>
+          <div class="stat reveal reveal-d3"><div class="num">82.7% vs 21.2%</div><div class="lbl">deposit conversion gap discovered</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap two-col">
+        <div>
+          <span class="kicker">The problem</span>
+          <p class="muted mt-16">SLU's international student data lived in two worlds that never touch: the internal CRM and the US government's SEVIS database. A thorough investigation confirmed <strong style="color:var(--amber)">zero direct matches</strong> between the systems via any identifier — the CRM's Reference_ID is never transmitted to SEVIS, and the CRM export contains no email or name fields at all. Every bridge strategy was attempted and documented; none worked.</p>
+        </div>
+        <div>
+          <span class="kicker">What I did</span>
+          <ul class="impact-list mt-16">
+            <li>Architected a PostgreSQL-based data infrastructure in Supabase: processed and deduplicated <strong>34,341</strong> raw records into a high-integrity <strong>6,875</strong>-record master database, including correcting complex, Excel-corrupted date formats.</li>
+            <li>Engineered two core PostgreSQL views (<strong>vw_crm_analytics</strong>, <strong>vw_sevis_analytics</strong>) and 10 custom SQL queries feeding a 5-page interactive Looker Studio dashboard integrating 12 data sources.</li>
+            <li>Made the analytical call that defined the project: <strong>standalone analytics</strong> — analyzing each system independently with count-level reconciliation, after a documented bridge-strategy audit proved the identity gap.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap">
+        <span class="kicker">The impact</span>
+        <ul class="impact-list mt-16">
+          <li>The identity gap itself became a critical structural finding; resolving it is a primary recommendation of the report.</li>
+          <li>Deposit status is the primary predictor of enrollment: <strong>82.7%</strong> conversion for deposited students vs <strong>21.2%</strong> for non-deposited cohorts.</li>
+          <li>Translated <strong>3,523</strong> SEVIS records into operational intelligence, flagging high-risk cohorts (e.g., Nepal at a <strong>15.6%</strong> fee-payment rate) against intake deadlines — enabling targeted outreach that minimizes end-of-cycle compliance backlogs.</li>
+          <li>Outcome: <strong>Star Performer</strong> badge — the team's top recognition. We didn't just complete the internship; we won it.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap">
+        <span class="kicker">Live dashboard — explore it yourself</span>
+        <div class="mt-16 reveal">
+          <iframe src="https://datastudio.google.com/s/o7UNeP7nN9Y" title="SLU International Student Compliance — live Looker Studio dashboard" class="video-frame" loading="lazy"></iframe>
+        </div>
+        <p class="video-caption">Public, interactive, and live — pages 3–5 support chart cross-filtering. <a href="https://datastudio.google.com/s/o7UNeP7nN9Y" target="_blank" rel="noopener">Open dashboard in a new tab →</a></p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap two-col">
+        <div>
+          <span class="kicker">Team presentation</span>
+          <div class="card mt-16">
+            <h3>Recorded live team video (9+ minutes, with captions)</h3>
+            <p class="muted small mt-8">The Week-4 deliverable was a live team presentation of the full project — I led the main part of the delivery. The video, its subtitles, and the deck live in the team's Drive folder.</p>
+            <div class="btn-row mt-16">
+              <a class="btn btn-primary" href="https://drive.google.com/drive/folders/1OmoYfzWoK0nrLMBC3UlASi0-yJBlC59Q?usp=drive_link" target="_blank" rel="noopener">Watch the team's presentation →</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="kicker">Why standalone analysis?</span>
+          <details class="accordion mt-16" open>
+            <summary>The bridge-strategy audit</summary>
+            <div class="acc-body">
+              <table class="table">
+                <tr><th>Bridge attempted</th><th>Result</th><th>Root cause</th></tr>
+                <tr><td>Reference_ID vs NonImmigrant_ID</td><td>0 matches</td><td>Internal CRM number, never transmitted to the US government</td></tr>
+                <tr><td>Reference_ID vs Fin_ID</td><td>0 matches</td><td>Fin_ID has only 60 non-null values (separate financial system)</td></tr>
+                <tr><td>Email-based match</td><td>Impossible</td><td>SEVIS has 3,523 emails; CRM export has no email field</td></tr>
+                <tr><td>Name-based fuzzy match</td><td>Impossible</td><td>SEVIS has full names; CRM export has no name field</td></tr>
+              </table>
+              <p class="mt-16">This approach is not a limitation — it is the correct analytical decision given the data available. Resolving the identity gap became a primary recommendation of the report.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="card reveal">
+          <div class="btn-row">
+            <img src="../../assets/img/badge-slu-star-performer.png" alt="Star Performer badge" style="width:74px; border-radius:10px; background:#fff; padding:6px;" />
+            <a class="btn btn-primary" href="https://experience.4excelerate.org/verifications/certificate/b04080c0b01020e0-0a00010b0-0406090e0-190f3151G-16Hc1e99A807Df17G6TaZ60e6/Obaidullah" target="_blank" rel="noopener">Verify credential</a>
+            <a class="btn btn-ghost soon" href="#" title="Certificate PDF link coming soon">Certificate PDF (link coming soon)</a>
+            <a class="btn btn-ghost" href="../../index.html#projects">← All projects</a>
+          </div>
+          <div class="chips mt-16"><span class="chip">PostgreSQL</span><span class="chip">Supabase</span><span class="chip">SQL query optimization</span><span class="chip">Google Looker Studio</span><span class="chip">Data modeling</span></div>
+        </div>
+        <div class="next-cs">
+          <span class="lbl">Next case study</span>
+          <a href="../ai-tool-stack/index.html">The 5-Tool AI Pipeline →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span data-year>2026</span> Ahmad Obaidullah</span>
+      <span><a href="../../index.html">Home</a> · <a href="../../certifications/index.html">Certifications</a></span>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
