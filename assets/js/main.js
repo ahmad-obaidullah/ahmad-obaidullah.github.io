@@ -1,4 +1,4 @@
-/* Ahmad Obaidullah portfolio — vanilla JS interactions */
+/* Ahmad Obaidullah portfolio | vanilla JS interactions */
 (function () {
   "use strict";
 
@@ -83,6 +83,7 @@
   /* Video facade: click-to-load (never autoplay) */
   document.querySelectorAll(".video-facade").forEach(function (facade) {
     facade.addEventListener("click", function () {
+      if (facade.closest("a")) return;
       var src = facade.getAttribute("data-src");
       var note = facade.querySelector(".soon-note");
       if (!src) {
@@ -90,7 +91,7 @@
         else {
           note = document.createElement("div");
           note.className = "soon-note";
-          note.textContent = "Video link coming soon — the upload is pending. All other content is live.";
+          note.textContent = "Video link coming soon: the upload is pending. All other content is live.";
           facade.appendChild(note);
         }
         return;
@@ -109,6 +110,23 @@
       facade.style.aspectRatio = "auto";
       facade.innerHTML = "";
       facade.style.cursor = "default";
+      facade.appendChild(iframe);
+    });
+  });
+
+  /* Document facade: click-to-load PDF / Drive preview embeds */
+  document.querySelectorAll(".doc-facade").forEach(function (facade) {
+    facade.addEventListener("click", function () {
+      if (facade.closest("a")) return;
+      var src = facade.getAttribute("data-src");
+      if (!src) return;
+      var iframe = document.createElement("iframe");
+      iframe.className = "doc-frame";
+      iframe.setAttribute("title", facade.getAttribute("data-title") || "Document preview");
+      iframe.src = src;
+      facade.innerHTML = "";
+      facade.style.cursor = "default";
+      facade.style.minHeight = "0";
       facade.appendChild(iframe);
     });
   });

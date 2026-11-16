@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>No-Code AI Lab — Ahmad Obaidullah, Data Analyst</title>
-  <meta name="description" content="No-Code AI Lab (Excelerate), in progress: a return-risk classifier on Google AutoML / Vertex AI — 5,000 orders, leakage-free features, threshold optimization, and a full bias audit." />
+  <title>No-Code AI Lab | Ahmad Obaidullah, Data Analyst</title>
+  <meta name="description" content="No-Code AI Lab (Excelerate), in progress: a return-risk classifier on Google AutoML / Vertex AI: 5,000 orders, leakage-free features, threshold optimization, and a full bias audit." />
   <meta property="og:title" content="Predicting E-Commerce Returns Without Writing Code (In Progress)" />
   <meta property="og:image" content="../../assets/img/badge-prompt-engineering.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +24,7 @@
         <a href="../../index.html#projects">Projects</a>
         <a href="../../certifications/index.html">Certifications</a>
         <a href="../../index.html#contact">Contact</a>
-        <a href="#" class="nav-cta" title="Résumé PDF — link coming soon">Résumé ↓</a>
+        <a href="../../assets/docs/Ahmad_Obaidullah_Resume.pdf" class="nav-cta" target="_blank" rel="noopener">Résumé ↓</a>
         <button class="theme-btn" data-theme-toggle aria-label="Toggle light mode">◐</button>
       </nav>
     </div>
@@ -36,7 +36,7 @@
         <p class="crumbs"><a href="../../index.html">Home</a> / <a href="../../index.html#projects">Projects</a> / Case study 04</p>
         <span class="kicker">Case study 04 · Internship · In progress</span>
         <h1>Predicting E-Commerce Returns Without Writing Code</h1>
-        <p class="hero-sub">No-Code AI Lab (<strong>Excelerate</strong>). Building, training, and evaluating a return-risk classifier on <strong>Google AutoML / Vertex AI</strong> — the full ML lifecycle without traditional programming. <span class="tag inprogress">In progress — demo video coming soon</span></p>
+        <p class="hero-sub">No-Code AI Lab (<strong>Excelerate</strong>). Building, training, and evaluating a return-risk classifier on <strong>Google AutoML / Vertex AI</strong>: the full ML lifecycle without traditional programming. <span class="tag inprogress">In progress: demo video coming soon</span></p>
         <div class="stat-strip">
           <div class="stat reveal"><div class="num">5,000 · 23 → 11</div><div class="lbl">orders · leakage-free features after cleaning</div></div>
           <div class="stat reveal reveal-d1"><div class="num">AUC 0.5825</div><div class="lbl">overall discrimination · Recall 60.69% at threshold 0.28</div></div>
@@ -50,23 +50,23 @@
       <div class="wrap two-col">
         <div>
           <span class="kicker">The problem</span>
-          <p class="muted mt-16">An e-commerce retailer loses <strong style="color:var(--amber)">$290,000 a year</strong> to returns — a <strong>29%</strong> return rate, with Clothing alone generating <strong>$132,200</strong> (45.6% of return costs). The goal: flag high-risk orders before fulfillment and eliminate ~<strong>22.4%</strong> of overall return costs (~$65,000).</p>
+          <p class="muted mt-16">An e-commerce retailer loses <strong style="color:var(--amber)">$290,000 a year</strong> to returns: a <strong>29%</strong> return rate, with Clothing alone generating <strong>$132,200</strong> (45.6% of return costs). The goal: flag high-risk orders before fulfillment and eliminate ~<strong>22.4%</strong> of overall return costs (~$65,000).</p>
         </div>
         <div>
           <span class="kicker">Why "no-code" still means rigor</span>
-          <p class="muted mt-16">The lab's point is the <strong>full lifecycle</strong>: define the problem, prepare the dataset, train, evaluate, audit for bias — the same discipline as coded ML, executed on platforms like Google AutoML and Teachable Machine. The engineering judgment lives in the data decisions, not the syntax.</p>
+          <p class="muted mt-16">The lab's point is the <strong>full lifecycle</strong>: define the problem, prepare the dataset, train, evaluate, audit for bias; the same discipline as coded ML, executed on platforms like Google AutoML and Teachable Machine. The engineering judgment lives in the data decisions, not the syntax.</p>
         </div>
       </div>
     </section>
 
     <section class="section-tight">
       <div class="wrap">
-        <span class="kicker">What I did so far — the module timeline</span>
+        <span class="kicker">What I did so far: the module timeline</span>
         <div class="timeline mt-16">
-          <div class="tl-item reveal"><h4>Module 1 — Platform reconnaissance</h4><p>Explored Teachable Machine and Google AutoML; proposed two practical AI use cases (an office email sorter and a recycling sorter) to anchor the lifecycle in real problems.</p></div>
-          <div class="tl-item reveal"><h4>Module 2 — Dataset engineering</h4><p>Prepared 5,000 orders from the Kaggle synthetic e-commerce returns dataset; dropped 4 identifier columns and 8 post-return leakage fields (Return_Reason, Days_to_Return, Return_Cost…); exported <strong>automl_ready_returns.csv</strong> — 11 clean features, zero missing values — and documented the 71/29 class imbalance.</p></div>
-          <div class="tl-item reveal"><h4>Module 3 — Training</h4><p>Trained a Gradient Boosted Decision Tree classifier with a stratified 80/20 split; found that the default 50% decision threshold missed over 90% of returns, and optimized it to <strong>0.28</strong> to prioritize recall on the minority class.</p></div>
-          <div class="tl-item reveal"><h4>Module 4 — Evaluation &amp; bias audit</h4><p>ROC-AUC <strong>0.5825</strong>, overall recall <strong>60.69%</strong>; Clothing recall <strong>92.42%</strong> (122/132 returns caught), high-discount orders <strong>75%</strong>, low-discount orders <strong>44.34%</strong>, Toys <strong>23.53%</strong>; a demographic audit found a <strong>15.42%</strong> recall gap (female 68.24% vs male 52.82%) traced to catalog composition, not algorithmic bias.</p></div>
+          <div class="tl-item reveal"><h4>Module 1: Platform reconnaissance</h4><p>Explored Teachable Machine and Google AutoML; proposed two practical AI use cases (an office email sorter and a recycling sorter) to anchor the lifecycle in real problems.</p></div>
+          <div class="tl-item reveal"><h4>Module 2: Dataset engineering</h4><p>Prepared 5,000 orders from the Kaggle synthetic e-commerce returns dataset; dropped 4 identifier columns and 8 post-return leakage fields (Return_Reason, Days_to_Return, Return_Cost, and 5 more); exported <strong>automl_ready_returns.csv</strong> (11 clean features, zero missing values) and documented the 71/29 class imbalance.</p></div>
+          <div class="tl-item reveal"><h4>Module 3: Training</h4><p>Trained a Gradient Boosted Decision Tree classifier with a stratified 80/20 split; found that the default 50% decision threshold missed over 90% of returns, and optimized it to <strong>0.28</strong> to prioritize recall on the minority class.</p></div>
+          <div class="tl-item reveal"><h4>Module 4: Evaluation &amp; bias audit</h4><p>ROC-AUC <strong>0.5825</strong>, overall recall <strong>60.69%</strong>; Clothing recall <strong>92.42%</strong> (122/132 returns caught), high-discount orders <strong>75%</strong>, low-discount orders <strong>44.34%</strong>, Toys <strong>23.53%</strong>; a demographic audit found a <strong>15.42%</strong> recall gap (female 68.24% vs male 52.82%) traced to catalog composition, not algorithmic bias.</p></div>
         </div>
       </div>
     </section>
@@ -75,9 +75,9 @@
       <div class="wrap">
         <span class="kicker">The impact so far</span>
         <ul class="impact-list mt-16">
-          <li>Feature importance says pricing drives returns: <strong>Discount_Applied 20.88%</strong>, <strong>Product_Price 15.43%</strong>, <strong>Clothing 13.46%</strong>, <strong>Order_Value 12.53%</strong> — demographics under 2%.</li>
+          <li>Feature importance says pricing drives returns: <strong>Discount_Applied 20.88%</strong>, <strong>Product_Price 15.43%</strong>, <strong>Clothing 13.46%</strong>, <strong>Order_Value 12.53%</strong>; demographics under 2%.</li>
           <li>The trade-off is quantified: catching <strong>60.69%</strong> of returns costs <strong>338 false alarms</strong> per 1,000 orders → next step is category-specific thresholds (<strong>0.22</strong> for Clothing vs <strong>0.35</strong> for Electronics/Toys), SMOTE oversampling, and behavioral features.</li>
-          <li>Honest evaluation: a model that looks accurate can still be operationally wrong — class imbalance is where naive accuracy goes to die.</li>
+          <li>Honest evaluation: a model that looks accurate can still be operationally wrong; class imbalance is where naive accuracy goes to die.</li>
         </ul>
       </div>
     </section>
@@ -86,17 +86,17 @@
       <div class="wrap two-col">
         <div>
           <span class="kicker">Demonstration video</span>
-          <div class="video-facade mt-16 reveal" data-title="No-Code AI Lab — demonstration video">
+          <div class="video-facade mt-16 reveal" data-title="No-Code AI Lab: demonstration video">
             <span class="play-btn">▶</span>
           </div>
-          <p class="video-caption"><strong>Coming soon —</strong> the internship's demonstration video will be embedded here once the lab concludes.</p>
+          <p class="video-caption"><strong>Coming soon:</strong> the internship's demonstration video will be embedded here once the lab concludes.</p>
         </div>
         <div>
           <span class="kicker">Status</span>
           <div class="card mt-16">
             <span class="tag inprogress">Internship in progress</span>
             <h3 class="mt-8">All 4 module notes complete</h3>
-            <p class="muted small mt-8">Final demonstration video and badge/certificate pending. This page will update the moment the internship concludes — the "In progress" card is deliberate: real, current work, honestly labeled.</p>
+            <p class="muted small mt-8">Final demonstration video and badge/certificate pending. This page will update the moment the internship concludes; the "In progress" card is deliberate: real, current work, honestly labeled.</p>
             <div class="btn-row mt-16">
               <a class="btn btn-ghost soon" href="#" title="Module notes PDF links coming soon">Module notes PDFs (links coming soon)</a>
             </div>
